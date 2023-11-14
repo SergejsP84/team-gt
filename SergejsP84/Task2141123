@@ -1,0 +1,6 @@
+SELECT
+    ROUND(AVG(Products.Price), 2) AS AverageProductCost,
+    Suppliers.SupplierName
+FROM Products
+JOIN Suppliers ON Products.SupplierID = Suppliers.SupplierID
+GROUP BY Suppliers.SupplierName;
