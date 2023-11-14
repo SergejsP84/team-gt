@@ -1,0 +1,3 @@
+SELECT SupplierName, Phone
+FROM Suppliers
+WHERE Country IN ('UK', 'USA')
